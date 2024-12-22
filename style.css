@@ -1,1 +1,120 @@
-/* We should make comments in the css & html for each step in the assignment */
+/* Implement a color scheme suitable for a kindergarten environment*/
+
+/* Colors taken from Coolers 
+ 3a405a Delft Blue
+ F9DEC9 Champagne pink
+ 99B2DD Powder blue 
+ E9AFA3 Melon
+ 685044 Umber
+  */
+
+body {
+  background: #3a405a;
+}
+/* Header Style */
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background-color: #f9dec9;
+}
+
+/* Styling for the h1 in header */
+header h1 {
+  font-family: "Roboto", sans-serif;
+  color: #3a405a;
+}
+
+/* Styling for the lists inside the unordered list in the nav */
+nav ul li {
+  margin: 0 20px; /* Margin 0 on top and bottom, 20px on left and right */
+}
+
+/* Colorful hover effects on navigation items */
+nav ul li a:hover {
+  background-color: #e9afa3;
+}
+/* main content which holds all the containers */
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border: 3px solid black;
+}
+
+/* Styling for header cells */
+table th {
+  font-weight: bold;
+  background-color: #e9afa3;
+  border: 2px solid black;
+}
+
+/* Styling for data cells */
+table td {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #f9dec9;
+}
+
+/* Styling for sections*/
+section {
+  background-color: #99b2dd;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* Styling for activity-container */
+.activity-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Styling for the images inside activity-container */
+.activity-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+}
+
+/* Styling for the lists in the unordered list in the section */
+section ul li {
+  padding: 0;
+  margin: 20px 10px;
+  list-style-type: disc;
+}
+
+/* Styling for footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background-color: #e9afa3;
+}
+
+/* Styling the lists of the unordered list in the footer */
+footer ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+/* Colorful hover effects on navigation items */
+footer ul li a:hover {
+  background-color: #99b2dd;
+}
+
+/* Ensure the layout is responsive for both mobile and desktop views */
+@media (min-width: 600px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  section {
+    flex: 1 1 45%;
+  }
+}
